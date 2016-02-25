@@ -40,28 +40,27 @@ var education = {
         "Dates" : "2016",
         "url" : "www.udacity.com"
         },
-    },
-"display" : function() {
-
-        var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools.name);
-        var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools.location);
-        var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools.degree);
-        var formattedSchoolMajors = HTMLschoolMajors.replace("%data%", education.schools.majors);
-        var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools.dates);
-        var formattedSchoolUrl = HTMLschoolUrl.replace("%data%", education.schools.url);
-        var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses.title);
-        var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses.school);
-        var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses.Dates);
-        var formattedOnlineUrl = HTMLonlineURL.replace("%data%", education.onlineCourses.Url);
-    
+        "display" : function() {
+            var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools.name);
+            var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools.location);
+            var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools.degree);
+            var formattedSchoolMajors = HTMLschoolMajors.replace("%data%", education.schools.majors);
+            var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools.dates);
+            var formattedSchoolUrl = HTMLschoolUrl.replace("%data%", education.schools.url);
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses.title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses.school);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses.Dates);
+            var formattedOnlineUrl = HTMLonlineURL.replace("%data%", education.onlineCourses.Url);
+        }
+    } 
 var work = {
-    "Jobs" : [
+    "Jobs" : { 
            "employer" : "Free Agent",
            "title" : "Video Game Coach",
            "location" : "Netherlands",
            "dates" : "2015-current",
            "description" : "Coaching people in videogames like League of legends, Hearthstone and online poker"
-        ],
+        },
         "display" : function() {
         var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs.employer);
         var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs.title);
@@ -89,6 +88,7 @@ var project = {
         $("#header").append(formattedPic);
         $("#header").append(formattedMessage);
         $("#header").append(HTMLskillsStart);
+          
         var topContactsArray = [
             formattedMobile, formattedEmail, formattedTwitter, formattedGithub, formattedBlog, formattedLocation
         ];
